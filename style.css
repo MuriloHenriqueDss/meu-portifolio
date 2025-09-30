@@ -136,7 +136,6 @@ header nav a:hover {
   margin: 0 auto;
 }
 
-/* Tech Stack */
 .tech-stack {
   padding: 100px 80px;
   text-align: center;
@@ -149,20 +148,25 @@ header nav a:hover {
 }
 
 .stack-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 30px;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px; /* Espaço entre linhas */
+}
+
+.stack-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Espaço entre os itens da mesma linha */
 }
 
 .stack-item {
   background: #1a1a1a;
   padding: 30px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.3s, background 0.3s;
+  border-radius: 15px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  width: 120px;
+  text-align: center;
 }
 
 .stack-item i {
